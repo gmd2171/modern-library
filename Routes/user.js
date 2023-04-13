@@ -1,9 +1,9 @@
 const express = require('express')
 const router = express.Router()
 
-const UserController = require('../controllers/UserController')
-const BookController = require('../controllers/BookController')
-const OrderController = require('../controllers/OrderController')
+const UserController = require('../Controllers/UserController')
+const BookController = require('../Controllers/BookController')
+const OrderController = require('../Controllers/OrderController')
 
 router.post('/register', UserController.registerUser)
 router.post('/login', UserController.authenticateUser)
